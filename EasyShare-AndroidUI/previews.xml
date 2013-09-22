@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Nexus 4"
+        config="layout-sw384dp-w384dp-h640dp-normal-notlong-port-notnight-xhdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x768-v17"
+        device="Nexus 4"
+        devicestate="Portrait"
+        target="Android 4.2.2"
+        theme="@style/AppTheme" >
+    </preview>
+    <preview
+        name="AEG"
+        config="layout-sw320dp-w320dp-h480dp-small-notlong-port-notnight-mdpi-finger-keyssoft-nokeys-navhidden-nonav-480x320-v17"
+        device="AEG"
+        devicestate="Portrait"
+        target="Android 4.2.2"
+        theme="@style/AppTheme" >
+    </preview>
+
+</previews>

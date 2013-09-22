@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:layout_margin="10dp" >
+
+    <TextView
+        android:id="@+id/service_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/service_status_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/service_status_button"
+        android:gravity="center_vertical"
+        android:text="@string/service_status"
+        android:textAlignment="gravity"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ToggleButton
+        android:id="@+id/service_status_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textOff="OFF"
+        android:textOn="ON" />
+
+    
+    
+    
+    <RadioGroup
+        android:id="@+id/radioFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/destination" >
+
+        <RadioButton
+            android:id="@+id/internal_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="setInternal"
+            android:text="@string/internal_folder" />
+
+        <RadioButton
+            android:id="@+id/external_folder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setExternal"
+            android:text="@string/external_folder" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/insert_username"
+        android:hint="@string/username_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/user"
+        android:layout_toRightOf="@+id/user"
+        android:singleLine="true"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/service_status"
+        android:gravity="center_vertical"
+        android:text="@string/user_lbl"
+        android:textAlignment="gravity"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+     <Button
+         android:id="@+id/btnSubmit"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_alignParentRight="true"
+         android:visibility="gone"
+         android:layout_below="@+id/insert_username"
+         android:onClick="submitUsername"
+         android:text="@string/submit_btn" />
+
+     <TextView
+         android:id="@+id/destination"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/user"
+         android:layout_marginTop="15dp"
+         android:text="@string/destination_folder"
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
